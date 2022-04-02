@@ -1,8 +1,6 @@
-import { useState } from 'react'
+import React from 'react'
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const HomePageRenderer = () => {
   return (
     <div>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum deleniti expedita eligendi quod atque asperiores
@@ -13,4 +11,4 @@ function App() {
   )
 }
 
-export default App
+export default HomePageRenderer
