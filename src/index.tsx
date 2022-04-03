@@ -4,8 +4,8 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { Outlet } from '@tanstack/react-location'
 
-import LayoutRoot from './components/layout/layout-root'
 import AppRoutes from './routes'
+import LayoutRoot from './components/layout/layout-root'
 
 ReactDOM.render(
   <React.StrictMode>
