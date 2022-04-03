@@ -12,12 +12,9 @@ const AppRoutes: React.FC = ({ children }) => {
       routes={[
         {
           path: '/',
-          id: 'index',
-          children: [
-            { path: '/', id: 'home page', element: <HomePageRenderer /> },
-            { path: ':uuid', element: <UserDetail /> }
-          ]
+          element: <HomePageRenderer />
         },
+        { path: '/users/:uuid', element: <UserDetail /> },
         { path: '/about', element: <div>hello world</div> }
       ]}
     >

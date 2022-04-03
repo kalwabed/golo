@@ -21,7 +21,7 @@ const HomePageRenderer = () => {
       <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
         {data?.results?.map(user => (
           <Link
-            to={`/${user.login.uuid}`}
+            to={`/users/${user.login.uuid}`}
             key={user.email}
             className="p-4 border border-gray-500 rounded hover:bg-yellow-500 transition"
           >
