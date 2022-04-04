@@ -29,6 +29,13 @@ const UserList = ({ users }: { users: User[] }) => {
           </div>
         ))}
 
+      {!filteredUsers.length && (
+        <div className="text-center col-span-full">
+          <h2 className="text-2xl">No users found</h2>
+          <p className="text-gray-600">Try searching for another name</p>
+        </div>
+      )}
+
       {filteredUsers?.map(user => (
         <Link
           to={`/users/${user.login.uuid}`}
