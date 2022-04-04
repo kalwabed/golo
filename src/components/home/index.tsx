@@ -9,7 +9,7 @@ import UserList from './user-list'
 
 const HomePageRenderer = () => {
   const setUsers = useSetAtom(usersState)
-  const { data } = useSWR('/users', getAllUsers, { revalidateOnFocus: false, refreshInterval: 0 })
+  const { data } = useSWR('/users', getAllUsers, { revalidateOnFocus: false, refreshInterval: 10000 })
 
   useEffect(() => {
     setUsers(data?.results)
