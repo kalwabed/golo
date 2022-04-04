@@ -5,7 +5,7 @@ Random website that fetches data from [randomuser.me](https://randomuser.me/).
 
 ## Tech Stack
 - React.js
-- TypeScript
+- Vite
 - SWR
 - Tailwind CSS
 - Jotai
